@@ -1,0 +1,2 @@
+How to Install libraries: 
+http://arduino.cc/en/Guide/Libraries 

@@ -1,0 +1,28 @@
+BoeBot Programs listing:
+
+1.1 - 1.4: THE BASICS, Manipulating LEDs with basic code:
+-	Turn on an LED 
+-	Blink an LED 
+-	Cycle LEDs 
+-	Dim an LED using a for loop
+
+2.1 - 2.2: THE BASICS, Manipulating LEDs and reading sensors (in OO):
+- 	Toggle an LED using the button
+- 	Dim an LED using the potentiometer
+
+3.1 - 3.4: THE BASICS, Manipulating the Servo motors with basic code (in OO):
+-	Drive the robot a direction for x seconds 
+-	Drive the robot a direction for x seconds, then back y seconds 
+-	Toggle the Servos using the button
+-	Control the speed of the robot using a potentiometer, and change the led based on robot speed.
+
+4.1 - 4.2: MODERATE, Programs using more sensors, and more complex functions (in OO):
+-	Drive the robot until the ultrasonic sees a wall 
+-	While drive the robot, display an led and have and speaker beep when the robot sees a wall  
+
+5.1 - 5.4: DIFFICULT, Programs utilizing the line following sensors and do more complex tasks with the ultrasonic (in OO):
+-	5.0 - calibration program - use this to determine your boebot's white and black line values first
+-	Have the robot drive forward until it detects a change in values 
+-	Have the robot follow a line using the line following sensors
+-	Have the robot follow a line using the line following sensors and calibrate itself (To Be added: have the LED's turn on/off when robot sees line. ex. red led turns on when robot is turning left).
+

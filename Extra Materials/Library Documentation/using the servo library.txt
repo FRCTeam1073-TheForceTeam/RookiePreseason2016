@@ -1,0 +1,28 @@
+Using the Servo Library:
+
+First, include the servo library in your program:
+
+#include <Servo.h> //the .h file extension denotes a header file
+
+Create 2 Servo objects, one for the left and one for the right
+
+Servo left;
+Servo right;
+
+To control the speed of the servos, use this code:
+
+left.writeMicroseconds();
+
+writeMicroseconds() is a method of the servo library, use it on a servo object to control the speed
+
+the speed ranges from 1300 to 1700.See below
+
+1700 - full speed forward
+1500 - stop (servos won't move)
+1300 - full speed reverse
+
+You can also vary the speed - for example, the code below would run the left servo at half-speed forward:
+
+left.writeMicroseconds(1600);
+
+Also, you will need to run the servos in opposite directions, since they are oriented differently on the robot.

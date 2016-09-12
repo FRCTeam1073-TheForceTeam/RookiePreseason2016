@@ -1,0 +1,27 @@
+**Make sure the newping library has been added to the Arduino IDE's local libraries!!**
+
+using the newping library:
+
+first, include the newping libary with this code:
+
+#include <NewPing.h>
+
+Now, declare the constants that the NewPing libary uses:
+
+#define TRIGGER_PIN 12
+#define ECHO_PIN 8
+#define MAX_DISTANCE 200
+
+Pass these definitions into the parameters of the NewPing sonar() method
+
+NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
+
+All the code above goes before the void setup() method (Since you want to be able to use this outside of a specific method).
+
+To test your sensor, run this code in the void loop() method:
+
+  delay(50); //delay in milliseconds, no lower than 40 so the sensor can measure the return time                    
+  unsigned int uS = sonar.ping(); // Send ping, get ping time in microseconds (uS).
+  unsigned int cmDist = uS / US_ROUNDTRIP_CM; //calculate the distance, in centimeters
+  Serial.println(cmDist); //print the distance
+

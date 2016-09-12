@@ -1,0 +1,34 @@
+Boebot Pinout guide:
+D3 = yellow led
+D5 = red led
+D6 = green led
+D7 = push button readout
+D8 = Echo pin on ultrasonic
+D9 = right drive servo
+D10 = left drive servo
+D11 = piezo buzzer
+D12 = trigger pin on ultrasonic
+
+A5 = analog potentiometer reading
+A0 = left light sensor reading 
+A1 = right light sensor reading 
+
+BoeBot Hardware Listing:
+-	1x arduino
+-	1x half-size breadboard
+-	2x Paralax Continuous Rotation Servos
+-	2x QRE113 Analog light phototransistors 
+-	1x red (+10k resistor), 1x yellow (+10k resistor), and 1x green LED (+1k resistor)
+-	1x variable resistor (potentiometer)
+-	1x HC-SR04 digital distance sensor module
+-	1x piezo buzzer
+-	1x push button (+10K resistor)
+-	Various full-size header pins (See here: http://www.adafruit.com/products/400)
+-	Various Pre-formed Breadboard wire (used this: http://www.amazon.com/CIRCUIT-TEST-Preformed-Breadboard-Jumper-Wire/dp/B008MOLG04)
+-	Various Jumper wire (male/male, male/female, female/female connectors. Used this: http://www.amazon.com/Kalevel%C2%AE-120pcs-Multicolored-Female-Breadboard/dp/B00M5WLZDW/ref=sr_1_2?s=electronics&ie=UTF8&qid=1435685428&sr=1-2&keywords=jumper+wire)
+-	3D printed Base Plate
+
+
+**Added recently with BoeBot Version 2**
+-	3D printed Phototransistor holders to replace the original wood block that held the phototransistors
+-	Additional jumper wire for the phototransistors
