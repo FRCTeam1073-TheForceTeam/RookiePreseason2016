@@ -8,8 +8,8 @@ last updated: 9/10/14
 Program: Drive the robot forward for a duration
 */
 
-#define PIN_SERVO_RIGHT   A0
-#define PIN_SERVO_LEFT    A1
+#define PIN_SERVO_RIGHT   9
+#define PIN_SERVO_LEFT    10
 
 int delayValue = 1000; //creates an int that controls how long to drive forward
 Drive *drive;
