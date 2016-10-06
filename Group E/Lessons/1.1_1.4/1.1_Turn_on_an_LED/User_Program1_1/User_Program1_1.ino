@@ -30,7 +30,7 @@ void setup(){
 }
 
 void loop(){
-  console.log();
+  Serial.print("Hello World");
   delay(speed);
   digitalWrite(ledred, LOW);
   digitalWrite(ledgreen, LOW);
