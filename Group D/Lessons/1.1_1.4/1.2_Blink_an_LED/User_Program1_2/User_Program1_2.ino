@@ -5,12 +5,17 @@ Method stubs are pre-made. add your own code to complete the challenge!
 Program Task: Blink an LED on pin 5 
 Feel free to view the example program within the same folder if you need help!
 */
-int blink = 5;
+int ledblink = 5;
+int blinkdelay = 500;
 void setup(){
-  
+  pinMode (ledblink, OUTPUT);
+  digitalWrite (ledblink, HIGH);
 }
 
 void loop(){
-  //also here
+  delay (blinkdelay);
+  digitalWrite (ledblink, LOW);
+  delay (blinkdelay);
+  digitalWrite (ledblink, HIGH);
 }
 
