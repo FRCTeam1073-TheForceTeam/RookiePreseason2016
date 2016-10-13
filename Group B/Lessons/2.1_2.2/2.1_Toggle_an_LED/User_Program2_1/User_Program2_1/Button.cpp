@@ -3,9 +3,9 @@
 #include "Button.h"
 
 Button::Button(int thePinNum) {
-	pinNum  = thePinNum
+	pinNum  = thePinNum;
 }
 
 bool Button::isPressed() {
-	return daaigitalRead(pinNum) == HIGH;
+	return digitalRead(pinNum) == HIGH;
 }

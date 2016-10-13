@@ -9,8 +9,7 @@ private:
 	int blinkDelay;
 public:
 	Led(int pin, int delay = 500);
-	void turnOn();
-	void turnOff();
+	void setOn(bool on);
 	void turnOnDim(int brightness);
 	void cycle(int count, int dutyCycle = 50);
 	void rampUp(int steps, int delayMs);
