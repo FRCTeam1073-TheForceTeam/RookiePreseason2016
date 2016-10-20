@@ -8,7 +8,7 @@ Program Task: Dim the led on pin 5 using the potentiometer, so that as the poten
 Feel free to view the example program within the same folder if you need help!
 */
 #define PIN_LED_RED       5
-#define PIN_POT           5
+#define PIN_POT           A5
 
 Led *redLed;
 //Potentiometer *myPot;
@@ -16,11 +16,13 @@ Led *redLed;
 void setup(){
   pinMode(5, OUTPUT);
   pinMode(A5, INPUT);
+  analogWrite(5, 255);
 }
 
 void loop(){
- analogR
- //analogWrite(5, 255);
-  //analogWrite(5, analogRead(A5));
+
+
+analogRead(INPUT);
+analogWrite(5, analogRead(A5)*100.0/1023.0);
 }
 

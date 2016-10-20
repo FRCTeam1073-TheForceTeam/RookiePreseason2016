@@ -7,11 +7,11 @@ last updated: 9/9/14
 
 Program: Dim an LED on pin 5, using the potentiometer on pin A5
 */
-#define PIN_LED_RED       5
-#define PIN_POT           5
+#define PIN_LED_RED     5
+#define PIN_POT     5
 
 Led *redLed;
-Potentiometer *myPot;
+//Potentiometer *myPot;
 
 void setup(){ //setup runs just once
   redLed = new Led(PIN_LED_RED);
