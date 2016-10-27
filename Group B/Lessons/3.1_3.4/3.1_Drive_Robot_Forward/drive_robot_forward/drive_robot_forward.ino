@@ -16,12 +16,13 @@ Drive *drive;
 
 void setup(){ //setup runs just once
   drive = new Drive(PIN_SERVO_LEFT, PIN_SERVO_RIGHT);
-  drive->fwd(50);
-  delay(delayValue);
-  drive->stop();
+  
+  //delay(delayValue);
+  //drive->stop();
 }
 
 void loop(){ //loop runs over and over again
+  drive->fwd(50);
   ; //nothing needed here
 }
 

@@ -9,6 +9,7 @@ Feel free to view the example program within the same folder if you need help!
 #include "Button.h"
 int buttonNum = 7;
 int ledNum = 5;
+int lightIsOn = 1;
 Button butte = Button(buttonNum);
 void setup(){
   pinMode(ledNum, OUTPUT);
@@ -17,10 +18,16 @@ void setup(){
 
 void loop(){
   if(butte.isPressed () == 1){
+    if(lightIsOn == 1) {
       digitalWrite(ledNum, LOW);
-  }
+      lightIsOn = 0;
+      delay(500);
+    }
     else{
         digitalWrite(ledNum, HIGH);
+        lightIsOn = 1;
+        delay(500);
       }
   }
+}
 
